@@ -41,7 +41,15 @@ function botonAgregar(){
     return;
 }
 
-
+function sortearAmigo(){
+    if(amigos.length ===0){
+        alert("Favor de ingresar algun amigo");
+        return;
+    }
+    let numero = Math.floor(Math.random()*amigos.length);
+    document.getElementById("resultado").innerHTML = amigos[numero];
+    return;
+}
 
 
 
